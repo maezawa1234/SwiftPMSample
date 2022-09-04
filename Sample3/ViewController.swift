@@ -8,8 +8,12 @@
 import UIKit
 import ViewModels
 import RxSwift
+import RxCocoa
+import View
 
 class ViewController: UIViewController {
+    @IBOutlet weak var button: UIButton!
+
     private let homeViewModel = HomeViewModel()
     private let featureA = FeatureA()
 
@@ -20,6 +24,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print(homeViewModel.text)
         print(featureA.text)
+
+        button.rx.tap.asSignal()
+            .emit(onNext: {
+
+            })
+            .disposed(by: disposeBag)
     }
 }
 
