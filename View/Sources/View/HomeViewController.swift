@@ -1,10 +1,3 @@
-//
-//  HomeViewController.swift
-//  
-//
-//  Created by Kenichi Maezawa on 2022/09/05.
-//
-
 import UIKit
 import Foundation
 
@@ -39,7 +32,5 @@ public class HomeViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
