@@ -11,6 +11,23 @@ import RxSwift
 import RxCocoa
 import View
 
+extension NSObject {
+    class var className: String {
+        return String(describing: self)
+    }
+
+    var className: String {
+        return type(of: self).className
+    }
+}
+
+// MARK: - Bundle
+extension NSObject {
+    static var bundle: Bundle {
+        return Bundle(for: self.self)
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
 
@@ -26,8 +43,9 @@ class ViewController: UIViewController {
         print(featureA.text)
 
         button.rx.tap.asSignal()
-            .emit(onNext: {
-
+            .emit(onNext: { [weak self] in
+                let homeVC = HomeViewController()
+                self?.present(homeVC, animated: true)
             })
             .disposed(by: disposeBag)
     }
