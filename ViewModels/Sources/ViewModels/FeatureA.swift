@@ -9,5 +9,6 @@ import Foundation
 
 public struct FeatureA {
     public init() {}
+
     public let text = "FeatureA"
 }
