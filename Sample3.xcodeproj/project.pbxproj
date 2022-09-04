@@ -16,7 +16,7 @@
 		BCB4683828C5272C0061B1B4 /* Sample3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4683728C5272C0061B1B4 /* Sample3Tests.swift */; };
 		BCB4684228C5272C0061B1B4 /* Sample3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4684128C5272C0061B1B4 /* Sample3UITests.swift */; };
 		BCB4684428C5272C0061B1B4 /* Sample3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4684328C5272C0061B1B4 /* Sample3UITestsLaunchTests.swift */; };
-		BCB4685528C528E90061B1B4 /* ViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685428C528E90061B1B4 /* ViewModels */; };
+		BCB4685A28C5312F0061B1B4 /* ViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685928C5312F0061B1B4 /* ViewModels */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		BCB4683D28C5272C0061B1B4 /* Sample3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sample3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB4684128C5272C0061B1B4 /* Sample3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3UITests.swift; sourceTree = "<group>"; };
 		BCB4684328C5272C0061B1B4 /* Sample3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BCB4685228C5283F0061B1B4 /* ViewModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ViewModels; path = ../ViewModels; sourceTree = "<group>"; };
+		BCB4685828C530CE0061B1B4 /* ViewModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ViewModels; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB4685528C528E90061B1B4 /* ViewModels in Frameworks */,
+				BCB4685A28C5312F0061B1B4 /* ViewModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 		BCB4681428C5272B0061B1B4 = {
 			isa = PBXGroup;
 			children = (
-				BCB4685228C5283F0061B1B4 /* ViewModels */,
+				BCB4685828C530CE0061B1B4 /* ViewModels */,
 				BCB4681F28C5272B0061B1B4 /* Sample3 */,
 				BCB4683628C5272C0061B1B4 /* Sample3Tests */,
 				BCB4684028C5272C0061B1B4 /* Sample3UITests */,
@@ -156,7 +156,7 @@
 			);
 			name = Sample3;
 			packageProductDependencies = (
-				BCB4685428C528E90061B1B4 /* ViewModels */,
+				BCB4685928C5312F0061B1B4 /* ViewModels */,
 			);
 			productName = Sample3;
 			productReference = BCB4681D28C5272B0061B1B4 /* Sample3.app */;
@@ -619,7 +619,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BCB4685428C528E90061B1B4 /* ViewModels */ = {
+		BCB4685928C5312F0061B1B4 /* ViewModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ViewModels;
 		};

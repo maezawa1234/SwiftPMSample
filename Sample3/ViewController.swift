@@ -9,13 +9,14 @@ import UIKit
 import ViewModels
 
 class ViewController: UIViewController {
-
-    private let viewModel = ViewModel("SwiftPM Sample App")
+    private let homeViewModel = HomeViewModel()
+    private let featureA = FeatureA()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(viewModel.text)
+        print(homeViewModel.text)
+        print(featureA.text)
     }
 }
 
