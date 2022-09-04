@@ -19,6 +19,7 @@
 		BCB4685A28C5312F0061B1B4 /* ViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685928C5312F0061B1B4 /* ViewModels */; };
 		BCB4685D28C535DE0061B1B4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685C28C535DE0061B1B4 /* RxCocoa */; };
 		BCB4685F28C535DE0061B1B4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685E28C535DE0061B1B4 /* RxSwift */; };
+		BCB4686428C53B800061B1B4 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4686328C53B800061B1B4 /* APIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB4686428C53B800061B1B4 /* APIKit in Frameworks */,
 				BCB4685F28C535DE0061B1B4 /* RxSwift in Frameworks */,
 				BCB4685D28C535DE0061B1B4 /* RxCocoa in Frameworks */,
 				BCB4685A28C5312F0061B1B4 /* ViewModels in Frameworks */,
@@ -163,6 +165,7 @@
 				BCB4685928C5312F0061B1B4 /* ViewModels */,
 				BCB4685C28C535DE0061B1B4 /* RxCocoa */,
 				BCB4685E28C535DE0061B1B4 /* RxSwift */,
+				BCB4686328C53B800061B1B4 /* APIKit */,
 			);
 			productName = Sample3;
 			productReference = BCB4681D28C5272B0061B1B4 /* Sample3.app */;
@@ -238,6 +241,7 @@
 			mainGroup = BCB4681428C5272B0061B1B4;
 			packageReferences = (
 				BCB4685B28C535DE0061B1B4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				BCB4686228C53B800061B1B4 /* XCRemoteSwiftPackageReference "APIKit" */,
 			);
 			productRefGroup = BCB4681E28C5272B0061B1B4 /* Products */;
 			projectDirPath = "";
@@ -636,6 +640,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		BCB4686228C53B800061B1B4 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -652,6 +664,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BCB4685B28C535DE0061B1B4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		BCB4686328C53B800061B1B4 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB4686228C53B800061B1B4 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
