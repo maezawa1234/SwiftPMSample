@@ -11,23 +11,6 @@ import ViewModel
 import Repositories
 import RxSwift
 
-extension NSObject {
-    class var className: String {
-        return String(describing: self)
-    }
-
-    var className: String {
-        return type(of: self).className
-    }
-}
-
-// MARK: - Bundle
-extension NSObject {
-    static var bundle: Bundle {
-        return Bundle(for: self.self)
-    }
-}
-
 public class HomeViewController: UIViewController {
     private let viewModel = HomeViewModel()
     private let repository = HomeRepository()
