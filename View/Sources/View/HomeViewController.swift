@@ -52,5 +52,12 @@ public class HomeViewController: UIViewController {
                 print("get data!", $0)
             })
             .disposed(by: disposeBag)
+        if #available(iOS 13.0, *) {
+            let image = UIImage(named: "icon_airdrop.pdf", in: .module, with: nil)
+            let testImage = UIImageView(image: image)
+            testImage.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            self.view.addSubview(testImage)
+        } else {
+        }
     }
 }
