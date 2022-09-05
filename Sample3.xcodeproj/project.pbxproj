@@ -20,9 +20,9 @@
 		BCB4685D28C535DE0061B1B4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685C28C535DE0061B1B4 /* RxCocoa */; };
 		BCB4685F28C535DE0061B1B4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4685E28C535DE0061B1B4 /* RxSwift */; };
 		BCB4686428C53B800061B1B4 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4686328C53B800061B1B4 /* APIKit */; };
-		BCB4686728C53D5E0061B1B4 /* View in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4686628C53D5E0061B1B4 /* View */; };
 		BCB4686A28C543D90061B1B4 /* SampleViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4686828C543D90061B1B4 /* SampleViewController1.swift */; };
 		BCB4686B28C543D90061B1B4 /* SampleViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB4686928C543D90061B1B4 /* SampleViewController1.xib */; };
+		BCB4686D28C5C1D70061B1B4 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = BCB4686C28C5C1D70061B1B4 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,8 @@
 			files = (
 				BCB4686428C53B800061B1B4 /* APIKit in Frameworks */,
 				BCB4685F28C535DE0061B1B4 /* RxSwift in Frameworks */,
+				BCB4686D28C5C1D70061B1B4 /* AppFeature in Frameworks */,
 				BCB4685D28C535DE0061B1B4 /* RxCocoa in Frameworks */,
-				BCB4686728C53D5E0061B1B4 /* View in Frameworks */,
 				BCB4685A28C5312F0061B1B4 /* ViewModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +176,7 @@
 				BCB4685C28C535DE0061B1B4 /* RxCocoa */,
 				BCB4685E28C535DE0061B1B4 /* RxSwift */,
 				BCB4686328C53B800061B1B4 /* APIKit */,
-				BCB4686628C53D5E0061B1B4 /* View */,
+				BCB4686C28C5C1D70061B1B4 /* AppFeature */,
 			);
 			productName = Sample3;
 			productReference = BCB4681D28C5272B0061B1B4 /* Sample3.app */;
@@ -683,9 +683,9 @@
 			package = BCB4686228C53B800061B1B4 /* XCRemoteSwiftPackageReference "APIKit" */;
 			productName = APIKit;
 		};
-		BCB4686628C53D5E0061B1B4 /* View */ = {
+		BCB4686C28C5C1D70061B1B4 /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = View;
+			productName = AppFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
