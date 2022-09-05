@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import ViewModel
 
 extension NSObject {
     class var className: String {
@@ -26,6 +27,7 @@ extension NSObject {
 }
 
 public class HomeViewController: UIViewController {
+    private let viewModel = HomeViewModel()
 
     // MARK: - Initialize
     public init() {
@@ -39,7 +41,7 @@ public class HomeViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(viewModel.text)
         // Do any additional setup after loading the view.
     }
 }
