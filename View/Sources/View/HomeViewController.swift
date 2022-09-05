@@ -8,6 +8,8 @@
 import UIKit
 import Foundation
 import ViewModel
+import Repositories
+import RxSwift
 
 extension NSObject {
     class var className: String {
@@ -28,6 +30,8 @@ extension NSObject {
 
 public class HomeViewController: UIViewController {
     private let viewModel = HomeViewModel()
+    private let repository = HomeRepository()
+    private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
     public init() {
@@ -43,5 +47,10 @@ public class HomeViewController: UIViewController {
         super.viewDidLoad()
         print(viewModel.text)
         // Do any additional setup after loading the view.
+        repository.getHomeData()
+            .subscribe(onSuccess: {
+                print("get data!", $0)
+            })
+            .disposed(by: disposeBag)
     }
 }
