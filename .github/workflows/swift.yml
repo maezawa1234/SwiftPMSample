@@ -1,19 +1,34 @@
-name: Swift
+name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+        - main
+    path-ignore:
+        - README.md
   pull_request:
-    branches: [ "main" ]
+    branches:
+        - main
+    path-ignore:
+        - README.md
+
+env:
+    DEVELOPER_DIR: /Applications/Xcode_13.3.app/Contents/Developer
 
 jobs:
-  build:
-
+  test:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+        - uses: actions/checkout@v3
+
+        - name: Install Mint
+          run: brew install mint
+
+        - name: Xcode build
+          run: make build-debug
+
+        - name: Xcode test
+          run: make test
+
+
