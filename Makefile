@@ -9,6 +9,7 @@ TEST_DEVICE ?= iPhone 11 Pro Max
 TEST_OS ?= 13.6
 TEST_DESTINATION := 'platform=${TEST_PLATFORM},name=${TEST_DEVICE},OS=${TEST_OS}'
 
+
 .PHONY: generate-swiftgen-code
 generate-swiftgen-code:
 	mint run swiftgen config run

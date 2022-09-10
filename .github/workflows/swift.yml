@@ -1,34 +1,28 @@
 name: CI
 
 on:
-  push:
+    push:
     branches:
         - main
     path-ignore:
         - README.md
-  pull_request:
+    pull_request:
     branches:
         - main
     path-ignore:
         - README.md
 
 env:
-    DEVELOPER_DIR: /Applications/Xcode_13.3.app/Contents/Developer
+    DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
 
 jobs:
-  test:
-    runs-on: macos-latest
+    test:
+        runs-on: macos-latest
 
-    steps:
-        - uses: actions/checkout@v3
-
-        - name: Install Mint
-          run: brew install mint
-
-        - name: Xcode build
-          run: make build-debug
-
-        - name: Xcode test
-          run: make test
-
-
+        steps:
+        - name: Select Xcode version # Xcode 12.4 を使う
+        run: sudo xcode-select -s '/Applications/Xcode_13.2.1.app/Contents/Developer'
+        - name: Show Xcode version
+        run: xcodebuild -version
+        - name: Build # シミュレーター向けにビルド
+        run: xcodebuild -sdk iphonesimulator -configuration Debug build
